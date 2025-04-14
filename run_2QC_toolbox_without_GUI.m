@@ -78,17 +78,17 @@ clear all;close all
 % you have to add the pathway to the m-map and seawater toolboxes, as well as the 2QC toolbox
 % if you have these pathways saved in your matlab search path already you
 % can comment out this section or simply ignore it (in the latter case you will get a warning in your matlab command window)
-addpath \matlab\m_map; warning off
-addpath \matlab\seawater; warning off
-addpath \2QC_toolbox; warning off
+addpath '/Users/colette/Library/CloudStorage/GoogleDrive-colette.kelly@whoi.edu/My Drive/postdoc_research/code/m_map'; warning off
+addpath '/Users/colette/Library/CloudStorage/GoogleDrive-colette.kelly@whoi.edu/My Drive/postdoc_research/code/seawater_ver3_3.1'; warning off
+addpath '/Users/colette/Library/CloudStorage/GoogleDrive-colette.kelly@whoi.edu/My Drive/postdoc_research/code/2nd_QC_tool'; warning off
 
-ref_path='\full\path\to\the\glodapv2\reference\dataset';
+ref_path='/Users/colette/Library/CloudStorage/GoogleDrive-colette.kelly@whoi.edu/My Drive/postdoc_research/data/GLODAP';
 
 % The name of your data folder MUST be an expocode (12 digit alphanumeric
 % string, eg 06MS20081031).  The data file MUST have the exact same name as
 % the folder it is placed in (ie. the expocode of the cruise)
 
-data_folder='\full\path\to\folder\with\your\datafile';  % DO NOT INCLUDE A FILE SEPARATOR ( \ OR /) AT THE END OF THE PATH!
+data_folder='/Users/colette/Library/CloudStorage/GoogleDrive-colette.kelly@whoi.edu/My Drive/postdoc_research/code/2nd_QC_tool/examples/325020240221';  % DO NOT INCLUDE A FILE SEPARATOR ( \ OR /) AT THE END OF THE PATH!
 
 % change the default minimum depth and maximum distance only when you have good reason to believe it is necessary
 % results will be saved in a different folder if you change one or both of these
@@ -106,7 +106,7 @@ y_param='density (i.e. sigma4)';
 % DO NOT CHANGE THE VARIABLE NAMES
 % DO NOT ADD VARIABLE NAMES
 % param={'TCARBN', 'ALKALI', 'OXYGEN', 'NITRAT', 'PHSPHT', 'SILCAT', 'SALNTY', 'CTDSAL', 'CTDOXY','PH','THETA'};
-param={'TCARBN'};
+param={'NITRAT'};
 
 %% -----------------------------------------------------------------------
 %% DO NOT CHANGE ANYTHING BELOW THIS!!!
