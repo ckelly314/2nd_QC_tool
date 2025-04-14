@@ -81,18 +81,31 @@ else
 mkdir([path filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29)]);
 end
 
+% needed to modify "path" because of weirdness with Google Drive
+%if strcmp(folder,expocode)==1
+
+%ss=cat(2,[path filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_Xresults',' RESULT');
+%SS=cat(2,[path filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_XID',' ID');
+%ss_fig=cat(2,[path filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
+
+%else
+
+%ss=cat(2,[path filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_Xresults',' RESULT');
+%SS=cat(2,[path filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_XID',' ID');
+%ss_fig=cat(2,[path filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
+%end
 
 if strcmp(folder,expocode)==1
 
-ss=cat(2,[path filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_Xresults',' RESULT');
-SS=cat(2,[path filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_XID',' ID');
-ss_fig=cat(2,[path filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
+ss=cat(2,['examples' filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_Xresults',' RESULT');
+SS=cat(2,['examples' filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_XID',' ID');
+ss_fig=cat(2,['examples' filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
 
 else
 
-ss=cat(2,[path filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_Xresults',' RESULT');
-SS=cat(2,[path filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_XID',' ID');
-ss_fig=cat(2,[path filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
+ss=cat(2,['examples' filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_Xresults',' RESULT');
+SS=cat(2,['examples' filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_XID',' ID');
+ss_fig=cat(2,['examples' filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
 end
 
 
@@ -124,7 +137,7 @@ in=inpolygon(rlon,rlat,clon,clat);
 cruisenos=rcruise(in);
 
 refcruiseno=unique(cruisenos,'stable');
-refdata='GLODAPv2.2019';
+refdata='GLODAPv2.2022';
 
 clear lookup clon clat in rlon rlat cruisenos rcruise
 
