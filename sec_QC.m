@@ -75,7 +75,11 @@ global stat1a press1a dens1a param1a flag1a stat2 lat2 lon2 press2 dens2 param2 
 param1=input(:,6);  press1=input(:,4); flag1=input(:,7);
 
 %% USER DEFINED PATHWAYS - DEFINE WHERE TO SAVE RESULTS AND FIGURES
-% needed to modify "path" because of weirdness with Google Drive
+
+%xoverresultsfolder = path;
+%xoverresultsfolder = 'examples';
+xoverresultsfolder = 'goshipxovers';
+
 %if strcmp(folder,expocode)==1
 %mkdir([path filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29)]);
 %else
@@ -95,22 +99,22 @@ param1=input(:,6);  press1=input(:,4); flag1=input(:,7);
 %ss_fig=cat(2,[path filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
 %end
 if strcmp(folder,expocode)==1
-mkdir(['examples' filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29)]);
+mkdir([xoverresultsfolder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29)]);
 else
-mkdir(['examples' filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29)]);
+mkdir([xoverresultsfolder filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29)]);
 end
 
 if strcmp(folder,expocode)==1
 
-ss=cat(2,['examples' filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_Xresults',' RESULT');
-SS=cat(2,['examples' filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_XID',' ID');
-ss_fig=cat(2,['examples' filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
+ss=cat(2,[xoverresultsfolder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_Xresults',' RESULT');
+SS=cat(2,[xoverresultsfolder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_XID',' ID');
+ss_fig=cat(2,[xoverresultsfolder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
 
 else
 
-ss=cat(2,['examples' filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_Xresults',' RESULT');
-SS=cat(2,['examples' filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_XID',' ID');
-ss_fig=cat(2,['examples' filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
+ss=cat(2,[xoverresultsfolder filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_Xresults',' RESULT');
+SS=cat(2,[xoverresultsfolder filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter},'_XID',' ID');
+ss_fig=cat(2,[xoverresultsfolder filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep,param{parameter}],filesep,expocode,'___',param{parameter},'___Xresults.png');
 end
 
 

@@ -58,7 +58,10 @@ diff=NaN;  stdw=NaN; xyr=NaN;
 %%  =========== USER DEFINED SETTINGS ===========
 
 % DEFINE WHERE YOU WANT TO SAVE THE XOVER PLOTS - there is the option to choose between an windows path and a linux path
-% needed to modify "path" because of weirdness with Google Drive
+%xoverresultsfolder = path;
+%xoverresultsfolder = 'examples';
+xoverresultsfolder = 'goshipxovers';
+
 %if strcmp(folder,expocode)==1
 %mkdir([path filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter});
 %plotname=cat(2,[path filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep param{parameter}],filesep,expo1,'___',expo2,'___',param{parameter},'___Xover');
@@ -69,12 +72,12 @@ diff=NaN;  stdw=NaN; xyr=NaN;
 %end
 
 if strcmp(folder,expocode)==1
-mkdir(['examples' filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter});
-plotname=cat(2,['examples'  filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep param{parameter}],filesep,expo1,'___',expo2,'___',param{parameter},'___Xover');
+mkdir([xoverresultsfolder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter});
+plotname=cat(2,[xoverresultsfolder  filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep param{parameter}],filesep,expo1,'___',expo2,'___',param{parameter},'___Xover');
 
 else
-mkdir(['examples'  filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter});
-plotname=cat(2,['examples' filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep param{parameter}],filesep,expo1,'___',expo2,'___',param{parameter},'___Xover');
+mkdir([xoverresultsfolder  filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep],param{parameter});
+plotname=cat(2,[xoverresultsfolder filesep folder filesep expocode filesep Y filesep num2str(mindepth) 'm_' num2str(latlim) 'degrees' filesep datestr(now,29) filesep param{parameter}],filesep,expo1,'___',expo2,'___',param{parameter},'___Xover');
 end
 
 diffmin=[-12 -10 0.8 0.8 0.8 0.8 -0.015 -0.015 0.8 -0.015 -1 0.8 0.8 0.8]; % columns are the different parameters

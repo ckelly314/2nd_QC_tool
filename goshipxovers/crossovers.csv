@@ -1,0 +1,33 @@
+CROSSOVER,EXPOCODE,SECT_ID,LONGITUDE,LATITUDE,woce_lines,source,country,stations,BIOME_FULL,lat1,lat2,lon1,lon2,mindepth,maxdist
+1,33RO20130803,A16N,-19.9929,46.9985,['A16N'],cchdo,US,37,North Atlantic Subtropical Seasonally Stratified,42.00,52.00,-24.99,-14.99,1500,2
+1,29AH20120622,OVIDE,-19.9695,46.9171,"['OVIDE', 'AR07W']",Mercedes,Spain,34,North Atlantic Subtropical Seasonally Stratified,41.92,51.92,-24.97,-14.97,1500,2
+2,49NZ20070724,P01,-151.4153,47.0018,['P01'],JAMSTEC,Japan,"83, 87, 91",North Pacific Subpolar Seasonally Stratified,43.00,54.00,189.00,213.00,2000,5
+2,33RO20150525,P16N,-152.0007,46.9995,"['P16N', 'P16']",Bonnie,US,154-170,North Pacific Subpolar Seasonally Stratified,43.00,54.00,189.00,213.00,2000,5
+3,33RR20220613,P02E,-151.9747,30.0002,"['P02', 'P02E']",cchdo,US,130-137,North Pacific Subtropical Permanently Stratified,22.50,40.50,190.00,216.00,2000,2
+3,33RO20150525,P16N,-151.9996,29.9997,"['P16N', 'P16']",Bonnie,US,124-132,North Pacific Subtropical Permanently Stratified,43.00,54.00,189.00,213.00,2000,2
+4,33RR20220613,P02E,-161.214,29.9993,"['P02', 'P02E']",cchdo,US,118-121,North Pacific Subtropical Permanently Stratified,25.00,35.00,193.79,203.79,2000,2
+4,33RR20220430,P02W,-161.2131,29.9994,"['P02', 'P02W']",cchdo,US,113-117,North Pacific Subtropical Permanently Stratified,25.00,35.00,193.79,203.79,2000,2
+5,49NZ20051031,P03E,-122.5888,30.0147,"['P03', 'P03E']",JAMSTEC,Japan,"28, 42",North Pacific Subtropical Permanently Stratified,25.01,35.01,232.41,242.41,2000,5
+5,33RR20220613,P02E,-123.0868,29.9999,"['P02', 'P02E']",cchdo,US,170-201,North Pacific Subtropical Permanently Stratified,25.00,35.00,231.91,241.91,2000,5
+6,29HE20130320,A17,-28.447,21.296,['A17'],Mercedes,Spain,80-89,North Altantic Subptropical Permanently Strati...,5.09,26.30,-33.55,-23.45,1000,2
+6,33RO20130803,A16N,-28.9983,19.7514,['A16N'],cchdo,US,86-113,North Altantic Subptropical Permanently Strati...,5.09,24.75,-33.55,-24.00,1000,2
+7,33RO20230306,A16N,,,['A16N'],cchdo,US,1-75,North Altantic Subptropical Permanently Strati...,5.09,5.00,-33.55,5.00,1000,2
+7,33RO20130803,A16N,-28.9983,19.7514,['A16N'],cchdo,US,73-145,North Altantic Subptropical Permanently Strati...,5.09,24.75,-33.55,-24.00,1000,2
+8,33RO20110926,A10,-25.6606,-29.9985,['A10'],Bonnie,US,66-72,South Atlantic Subtropical Permanently Stratified,-35.00,-25.00,-30.66,-20.66,1500,2
+8,33RO20131223,A16S,-24.9975,-30.0002,"['A16S', 'A23']",cchdo,US,47-53,South Atlantic Subtropical Permanently Stratified,-35.00,-25.00,-30.00,-20.00,1500,2
+9,33RO20100308,A13.5,1.6967,-30.5015,"['A13', 'A13.5', 'AJAX']",Bonnie,US,"48, 60",South Atlantic Subtropical Permanently Stratified,-35.50,-25.50,-3.30,6.70,1500,5
+9,33RO20110926,A10,1.6921,-29.5997,['A10'],Bonnie,US,16-39,South Atlantic Subtropical Permanently Stratified,-34.60,-24.60,-3.31,6.69,1500,5
+10,320620180309,S04P,-149.9949,-67.5146,['S04P'],Bonnie,US,51-70,Southern Ocean Ice,-72.51,-62.51,205.01,215.01,2000,2
+10,320620140320,P16S,-149.9892,-66.9988,"['P16', 'P16S']",Bonnie,US,3-8,Southern Ocean Ice,-72.00,-62.00,205.01,215.01,2000,2
+11,096U20160426,P15S,-169.9982,-66.333,['P15S'],Bonnie,US,"3, 4, 8",Southern Ocean Ice,-71.33,-61.33,185.00,195.00,1500,5
+11,320620180309,S04P,-169.9981,-67.4991,['S04P'],Bonnie,US,"11-17, 22-30, 54-61",Southern Ocean Ice,-72.50,-62.50,185.00,195.00,1500,5
+12,33RO20161119,P18,-102.9941,-69.5047,['P18'],Bonnie,US,200-211,Southern Ocean Ice,-74.50,-62.50,252.00,262.00,2000,2
+12,320620180309,S04P,-102.9734,-69.4968,['S04P'],Bonnie,US,96-107,Southern Ocean Ice,-74.50,-64.50,252.03,262.03,2000,2
+13,33RO20150525,P16N.2,-152.001,22.4993,"['P16N', 'P16']",Bonnie,US,113-116,North Pacific Subtropical Permanently Stratified,17.50,27.50,203.00,213.00,2000,2
+13,33RO20150410,P16N.1,-152.0005,22.5003,"['P16C', 'P16N', 'P16']",Bonnie,US,109-112,North Pacific Subtropical Permanently Stratified,17.50,27.50,203.00,213.00,2000,2
+14,49NZ20051031,P03E,-122.5888,30.0147,"['P03', 'P03E']",JAMSTEC,Japan,94,North Pacific Subtropical Permanently Stratified,17.50,27.50,203.00,213.00,2000,5
+14,33RO20150410,P16N.1,-152.0005,22.5003,"['P16C', 'P16N', 'P16']",Bonnie,US,107-112,North Pacific Subtropical Permanently Stratified,17.50,27.50,203.00,213.00,2000,5
+15,49NZ20051031,P03E,-122.5888,30.0147,"['P03', 'P03E']",JAMSTEC,Japan,94,North Pacific Subtropical Permanently Stratified,17.50,27.50,203.00,213.00,2000,5
+15,33RO20150525,P16N.2,-152.001,22.4993,"['P16N', 'P16']",Bonnie,US,"113-116, 118-120, 122, 124",North Pacific Subtropical Permanently Stratified,17.50,27.50,203.00,213.00,2000,2
+16,320620140320,P16S,-150.0006,-17.0002,"['P16', 'P16S']",Bonnie,US,85-90,South Pacific Subtropical Permanently Stratified,-22.00,-10.67,203.00,213.00,2000,2
+16,33RO20150410,P16N.1,-150.0006,-16.5011,"['P16C', 'P16N', 'P16']",Bonnie,US,"1,3,4,5,7",South Pacific Subtropical Permanently Stratified,-21.50,-11.50,203.00,213.00,2000,2

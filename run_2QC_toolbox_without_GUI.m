@@ -88,7 +88,7 @@ ref_path='/Users/colette/Library/CloudStorage/GoogleDrive-colette.kelly@whoi.edu
 % string, eg 06MS20081031).  The data file MUST have the exact same name as
 % the folder it is placed in (ie. the expocode of the cruise)
 
-data_folder='/Users/colette/Library/CloudStorage/GoogleDrive-colette.kelly@whoi.edu/My Drive/postdoc_research/code/2nd_QC_tool/examples/325020240221';  % DO NOT INCLUDE A FILE SEPARATOR ( \ OR /) AT THE END OF THE PATH!
+data_folder='/Users/colette/Library/CloudStorage/GoogleDrive-colette.kelly@whoi.edu/My Drive/postdoc_research/code/2nd_QC_tool/goshipxovers/325020240221';  % DO NOT INCLUDE A FILE SEPARATOR ( \ OR /) AT THE END OF THE PATH!
 
 % change the default minimum depth and maximum distance only when you have good reason to believe it is necessary
 % results will be saved in a different folder if you change one or both of these
@@ -106,7 +106,7 @@ y_param='density (i.e. sigma4)';
 % DO NOT CHANGE THE VARIABLE NAMES
 % DO NOT ADD VARIABLE NAMES
 % param={'TCARBN', 'ALKALI', 'OXYGEN', 'NITRAT', 'PHSPHT', 'SILCAT', 'SALNTY', 'CTDSAL', 'CTDOXY','PH','THETA'};
-param={'NITRAT'};
+param={'CFC_11'};
 
 %% -----------------------------------------------------------------------
 %% DO NOT CHANGE ANYTHING BELOW THIS!!!

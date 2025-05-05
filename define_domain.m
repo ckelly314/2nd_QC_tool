@@ -21,13 +21,16 @@ elseif min(lon)<-100 & max(lon)>100
     lon1ind=find(lon<0);if ~isempty(lon1ind);lon(lon1ind)=lon(lon1ind)+360;end;clear lon1ind
 end
     
-latmin = min(lat);
-latmax = max(lat);
-lonmin = min(lon);
-lonmax = max(lon);
+% If latlims and lonlims are provided, skip the map
+if nargin == 4
+    lats = latbox;
+    lons = lonbox;
+    return;
+end
 
-latcenter = mean([latmin latmax],'omitnan');%+0.005; % For some reason, this keeps the m_grid function from crashing in rare cases
-loncenter = mean([lonmin lonmax],'omitnan');%+0.005; % For some reason, this keeps the m_grid function from crashing in rare cases
+% Otherwise, use the interactive map to define the domain
+latcenter = mean([min(lat), max(lat)], 'omitnan');
+loncenter = mean([min(lon), max(lon)], 'omitnan');
 
 figure
 subplot('position',[0.05 0.05 0.9 0.65]);
@@ -49,6 +52,9 @@ text(xpos,ypos-0.6,'around your cruise track.','fontsize',14,'fontweight','bold'
 
 [X,Y]=ginput(2);
 [lons,lats]=m_xy2ll(X,Y);
+
+disp(lats)
+disp(lons)
 
 clear latmin latmax lonmin lonmax latcenter loncenter x y xpos ypos X Y
 
